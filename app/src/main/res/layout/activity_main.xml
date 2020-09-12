@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/enterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Name"
+        android:inputType="textCapWords"
+        style="textStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="508dp" android:layout_marginEnd="52dp" android:layout_marginTop="8dp"
+        app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="8dp"/>
+    />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TOPPINGS"
+        style="textStyle"
+        android:id="@+id/textView" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/enterName" android:layout_marginTop="32dp"
+        app:layout_constraintHorizontal_bias="0.03" android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/WhippedCream"/>
+
+
+    <CheckBox
+        android:id="@+id/WhippedCream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:text="@string/WhippedCream"
+        android:textSize="16sp"
+        style="textStyle" android:layout_marginTop="132dp"
+        app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.02"/>
+
+    <CheckBox
+        android:id="@+id/chocolate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:text="@string/chocolate"
+        android:textSize="16sp" style="textStyle"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/WhippedCream"
+        app:layout_constraintVertical_bias="0.0"/>
+
+
+
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="textStyle" tools:layout_editor_absoluteY="190dp" tools:layout_editor_absoluteX="10dp"/>
+    android:orientation="horizontal"
+    >
+
+
+    <Button
+
+        android:layout_width="48dp"
+
+        android:layout_height="48dp"
+        style="textStyle"
+        android:text="-"
+        android:onClick="decrement"
+        android:id="@+id/button" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="276dp"
+        app:layout_constraintEnd_toStartOf="@+id/quantity_text_view" android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+        app:layout_constraintHorizontal_bias="0.238" android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/button3" app:layout_constraintVertical_bias="0.009"/>
+
+
+    android:text="-"/>
+
+
+    <TextView
+
+        android:id="@+id/quantity_text_view"
+
+        android:layout_width="18dp"
+
+        android:layout_height="wrap_content"
+
+        android:text="@string/one"
+
+        android:textColor="@android:color/black"
+
+        android:textSize="16sp" app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.174"/>
+
+
+    <Button
+
+        android:layout_width="48dp"
+
+        android:layout_height="48dp"
+
+        android:onClick="increment"
+
+        android:text="+"
+        android:id="@+id/button2" app:layout_constraintStart_toEndOf="@+id/quantity_text_view"
+        android:layout_marginStart="24dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="276dp"
+        app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.003"/>
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Quantity"
+        style="textStyle"
+        android:id="@+id/textView2" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+        app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="212dp"
+        app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/button" app:layout_constraintVertical_bias="0.394"/>
+
+
+    <Button
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:onClick="submitOrder"
+
+        android:text="@string/Order"
+        android:id="@+id/button3" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+        android:layout_marginBottom="164dp" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.127" android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/quantity_text_view" app:layout_constraintVertical_bias="1.0"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,15 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">coffeeApp</string>
+    <string name="Name">Name</string>
+    <string name="Name_u">Name: <xliff:g id="namee" example="hosam">%s</xliff:g></string>
+    <string name="TOPPINGS">TOPPINGS</string>
+    <string name="WhippedCream">WhippedCream </string>
+    <string name="chocolate">chocolate</string>
+    <string name="one" translatable="false">1</string>
+    <string name="Order">Order</string>
+    <string name="Thank_You">Thank You!"</string>
+    <string name="with_chocolate">with chocolate</string>
+    <string name="with_Whipped_Cream">with Whipped Cream</string>
+    <string name="Total">Total: $"</string>
+    <string name="Quantity"> Quantity </string>
+</resources>
